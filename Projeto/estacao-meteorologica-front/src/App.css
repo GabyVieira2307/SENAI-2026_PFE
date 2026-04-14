@@ -1,0 +1,199 @@
+/* Fundo da página */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111d13; /* sua cor de fundo */
+}
+
+/* Card principal */
+.login-card {
+  display: flex;
+  width: 850px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Parte da imagem */
+.login-imagem {
+  width: 50%;
+  height: 100%;
+}
+
+.login-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém sem distorcer */
+}
+
+/* Parte do formulário */
+.login-formulario {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Título */
+.titulo {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #070f0af3; /* mais escuro como você pediu */
+}
+
+/* Form */
+.login-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.login-formulario label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.login-formulario input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Botão */
+.botao {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  background-color: #111d13;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #1f3a26;
+}
+
+/* Link cadastro */
+.login-formulario a {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #53835b;
+  text-decoration: none;
+}
+
+.login-formulario a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .login-imagem {
+    width: 100%;
+    height: 200px;
+  }
+
+  .login-formulario {
+    width: 100%;
+  }
+}
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(90deg, #111d13, #1b4332);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== TÍTULO ===== */
+header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== MENU ===== */
+header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+/* ===== LINKS ===== */
+header nav ul li a {
+    text-decoration: none;
+    color: #d8f3dc;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* LINHA ANIMADA */
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #95d5b2;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* HOVER */
+header nav ul li a:hover {
+    color: #95d5b2;
+}
+
+/* BOTÃO SAIR */
+header nav ul li:last-child a {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+header nav ul li:last-child a:hover {
+    color: #ff4d4d;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

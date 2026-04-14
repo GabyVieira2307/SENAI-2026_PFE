@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FUNDO */
+body {
+  background: linear-gradient(135deg, #0a0f1c, #1c2536);
+  color: #eaeaea;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.main {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+/* CARDS */
+.card {
+  background: #111827;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* CAPA */
+.capa {
+  height: 150px;
+  background: linear-gradient(90deg, #A2D2FF, #6ea8fe);
+  border-radius: 18px 18px 0 0;
+}
+
+/* PERFIL */
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.foto {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 4px solid #111827;
+}
+
+/* TEXTO */
+.texto {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.texto h2 {
+  color: #e5e7eb;
+}
+
+.texto p {
+  color: #cbd5e1;
+}
+
+.texto span {
+  color: #94a3b8;
+}
+
+/* BOTÕES */
+button {
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-azul {
+  background: #A2D2FF;
+  color: #0a0f1c;
+  font-weight: 600;
+}
+
+.btn-azul:hover {
+  background: #89c2f7;
+}
+
+.btn-cinza {
+  background: #1f2937;
+  color: #d1d5db;
+}
+
+.btn-outline {
+  border: 1px solid #A2D2FF;
+  background: transparent;
+  color: #A2D2FF;
+}
+
+/* DESTAQUES */
+.destaques {
+  display: flex;
+  gap: 10px;
+}
+
+.post {
+  flex: 1;
+  height: 90px;
+  background: #1f2937;
+  border-radius: 12px;
+}
+
+/* EXPERIÊNCIA */
+.experiencia {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.empresa-info {
+  position: relative;
+}
+
+.linha {
+  position: absolute;
+  left: 6px;
+  top: 55px;
+  width: 2px;
+  height: 110px;
+  background: #374151;
+}
+
+.cargo {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  background: #A2D2FF;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* FORMAÇÃO */
+.formacao {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-grande {
+  width: 95px;   /* 👈 aumentei mais ainda */
+  height: 95px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 2px solid #374151;
+}
+
+/* IDIOMAS */
+.idioma {
+  margin: 10px 0;
+}
+
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  background: #374151;
+}
+
+/* SIDEBAR */
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* TÍTULOS */
+h3, h4 {
+  color: #A2D2FF;
+  margin-bottom: 10px;
+}

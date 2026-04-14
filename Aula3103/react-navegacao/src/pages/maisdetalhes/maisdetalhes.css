@@ -1,0 +1,72 @@
+/* CONTAINER */
+.detalhes-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    border-radius: 15px;
+
+    box-shadow: 0 6px 15px rgba(168, 85, 247, 0.3);
+}
+
+/* TÍTULOS */
+.detalhes-container h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* PARÁGRAFOS */
+.detalhes-container p {
+    color: #4c1d95;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* FRASES FINAIS (últimos parágrafos ficam mais destacados) */
+.detalhes-container p:last-child,
+.detalhes-container p:nth-last-child(2),
+.detalhes-container p:nth-last-child(3),
+.detalhes-container p:nth-last-child(4) {
+    text-align: center;
+    font-style: italic;
+    color: #7e22ce;
+}
+
+/* HOVER SUAVE */
+.detalhes-container:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.5);
+}
+/* CONTAINER DO BOTÃO */
+.botao-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* BOTÃO */
+.botao-voltar {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background: linear-gradient(90deg, #6a0dad, #a855f7);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.botao-voltar:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #581c87, #9333ea);
+}

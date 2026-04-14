@@ -1,0 +1,3 @@
+azul = 03045e cor padrao
+texto = 90e0ef
+cor para outros lugares = 0077b6

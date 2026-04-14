@@ -1,0 +1,72 @@
+h2#home{
+    color: black;
+    header h1{
+    text-align: center;
+}
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+
+}
+
+main{
+    display: flex;
+    background-color: rgb(244, 200, 150);
+    color:black
+}
+
+nav{
+    width: 20%;
+}
+
+section{
+    width: 60%;
+}
+
+aside{
+    width: 20%;
+}
+
+img{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+#modalidades{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#modalidades div{
+    width: 250px;
+}
+
+#modalidades img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tabela-planos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plano{
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+}
